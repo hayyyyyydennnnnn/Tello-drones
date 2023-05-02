@@ -1,3 +1,7 @@
+# Started from Tello Template
+# This Python app is in the Public domain
+# Some parts from Tello3.py
+
 import threading, socket, sys, time, subprocess
 
 
@@ -49,12 +53,16 @@ ready = input('\nAre you ready to take flight: ')
 
 
 try:
-    if ready.lower() == 'yes':
+    if ready.lower() == 'y':
         print("\nStarting Drone!\n")
 
         sendmsg('command', 0)
+
         sendmsg('takeoff')
-        sendmsg('forward 100')
+
+        sendmsg('forward 225')
+        sendmsg('go 125 0 60 100')
+       
 
         sendmsg('land')
 
