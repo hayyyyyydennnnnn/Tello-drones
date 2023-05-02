@@ -60,19 +60,13 @@ try:
 
         sendmsg('takeoff')
 
-        sendmsg('forward 225')
-        sendmsg('go 125 0 60 100')
-        sendmsg('ccw 180')
+        sendmsg('forward 20')
+        sendmsg('left 20')
+        sendmsg('back 20')
+        sendmsg('right 20')
 
-        sendmsg('curve 100 100 0 30 250 0 90')
 
-        sendmsg('ccw 90')
-        sendmsg("forward 20")
 
-        sendmsg('ccw 90')
-
-        sendmsg("forward 280")
-        sendmsg('go 200 10 -80 0')
 
         sendmsg('land')
 
